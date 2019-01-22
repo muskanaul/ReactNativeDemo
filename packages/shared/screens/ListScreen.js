@@ -11,12 +11,13 @@ const uiTheme = {
   }
 };
 const randomImages = [
-  require('./critters/bunny.png'),
-  require('./critters/critter.png'),
-  require('./critters/hummingbird.jpg'),
-  require('./critters/owl.png'),
-  require('./critters/pig.png'),
-  require('./critters/tiger.jpg'),
+  require('./resources/user1.jpg'),
+  require('./resources/user2.jpg'),
+  require('./resources/user3.jpg'),
+  require('./resources/user4.jpg'),
+  require('./resources/user5.jpg'),
+  require('./resources/user6.jpg'),
+  require('./resources/user7.jpg')
 ];
 
 class ListScreen extends React.Component {
@@ -88,7 +89,7 @@ class ListScreen extends React.Component {
           borderColor: "#CED0CE"
         }}
       >
-        <ActivityIndicator animating size="large" color="#248700" />
+        <ActivityIndicator animating size="large" color="#CA5460" />
       </View>
     );
   };
@@ -114,7 +115,7 @@ class ListScreen extends React.Component {
     return (
       <ThemeContext.Provider value={getTheme(uiTheme)}>
       <View style={{ flex: 1}}>
-      <BottomNavigation active={this.state.active} hidden={false} style={{container: {backgroundColor: "#4B286D"}}} >
+      <BottomNavigation active={this.state.active} hidden={false} style={{container: {backgroundColor: "#CA5460"}}} >
       <BottomNavigation.Action
           key="search"
           icon="search"
@@ -192,7 +193,7 @@ const styles = StyleSheet.create({
   itemName: {
     fontFamily: "HelveticaNeue-UltraLight",
     fontSize: 20,
-    color: "#4B286D"
+    color: "#CA5460"
   }
 });
 

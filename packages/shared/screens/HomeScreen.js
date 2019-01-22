@@ -18,7 +18,6 @@ import Foundation from "react-native-vector-icons/Foundation";
 import { BottomNavigation} from 'react-native-material-ui';
 import { COLOR, ThemeContext, getTheme } from 'react-native-material-ui';
 import Icon from 'react-native-vector-icons/MaterialIcons';
-import logoImage from './resources/header.png';
 import homeImage from './resources/home.jpg';
 
 const {width, height} = Dimensions.get('window')
@@ -42,10 +41,8 @@ class HomeScreen extends React.Component {
 logo() {
     return(
         <View style={styles.logoContainer}> 
-            <Image style={styles.logo} source={logoImage} resizeMode='cover'/>
             <Image style={styles.logoHome} source={homeImage} resizeMode='cover'/>
-            <Text style={styles.itemName}>React Native Demo</Text>
-            <Text style={styles.detail}>Multi-Platform Application</Text>
+            <Text style={styles.detail}>React Native Web Boilerplate</Text>
         </View>
     );
 }
@@ -53,7 +50,7 @@ logo() {
 buttonGroup(){
     return(
         <View style={styles.buttonGroups}>
-            <TouchableOpacity  activeOpacity={0.6} underlayColor='rgba(0,0,0,0.001)' style={styles.buttonOnPress} onPress={() => this.onRandomPress()}>
+            <TouchableOpacity  activeOpacity={0.6} underlayColor='rgba(0,0,0,0.001)' style={styles.buttonOnPress} onPress={() => this.props.navigation.navigate('Search')}>
                 <View style={{flexDirection:'row', alignItems:'center', justifyContent:'center'}}>
                     <Icon name="shuffle" color='white' size={30}/>
                     <Text style={styles.buttonTitle}>Get Started</Text>
@@ -66,7 +63,7 @@ buttonGroup(){
     return (
       <ThemeContext.Provider value={getTheme(uiTheme)}>
       <View style={{ flex: 1}}>
-      <BottomNavigation active={this.state.active} hidden={false} style={{container: {backgroundColor: "#4B286D"}}}>
+      <BottomNavigation active={this.state.active} hidden={false} style={{container: {backgroundColor: "#CA5460"}}}>
       <BottomNavigation.Action
           key="search"
           icon="search"
@@ -115,8 +112,8 @@ const styles = StyleSheet.create({
       alignItems:'center'
   },
   logoHome:{
-    width:415,
-    height: 220,
+    width:350,
+    height: 350,
     alignItems:'center'
   },
   logoContainer:{
@@ -137,7 +134,7 @@ const styles = StyleSheet.create({
       padding:10, 
       margin:20,
       alignItems:'center', 
-      backgroundColor:'#248700', 
+      backgroundColor:'#EECF70', 
       height:50,
       borderRadius:4,
       marginTop: 44,

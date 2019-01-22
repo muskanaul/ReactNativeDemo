@@ -17,12 +17,11 @@ const uiTheme = {
 };
 
 const randomImages = [
-  require('./resources/critters/bunny.png'),
-  require('./resources/critters/critter.png'),
-  require('./resources/critters/hummingbird.jpg'),
-  require('./resources/critters/owl.png'),
-  require('./resources/critters/pig.png'),
-  require('./resources/critters/tiger.jpg'),
+  require('./resources/user1.jpg'),
+  require('./resources/user2.jpg'),
+  require('./resources/user3.jpg'),
+  require('./resources/user4.jpg'),
+  require('./resources/user5.jpg')
 ];
 
 
@@ -85,7 +84,7 @@ infoCard(){
         borderColor: "#CED0CE"
       }}
     >
-      <ActivityIndicator animating size="large" color="#248700" />
+      <ActivityIndicator animating size="large" color="#CA5460" />
       </View>
     )
   }
@@ -118,7 +117,7 @@ infoCard(){
     return (
       <ThemeContext.Provider value={getTheme(uiTheme)}>
       <View style={{ flex: 1}}>
-      <BottomNavigation active={this.state.active} hidden={false} style={{container: {backgroundColor: "#4B286D"}}}>
+      <BottomNavigation active={this.state.active} hidden={false} style={{container: {backgroundColor: "#CA5460"}}}>
       <BottomNavigation.Action
           key="search"
           icon="search"
@@ -140,7 +139,7 @@ infoCard(){
       </BottomNavigation>             
       </View>
       <View style={[styles.card2, { backgroundColor: '#FFFFFF' }]}>
-          <Text style={styles.title}>Carrier Lookup</Text>
+          <Text style={styles.title}>User Lookup</Text>
           <Kohana
             style={{ backgroundColor: '#FFFFFF', shadowOffset:{  width: 2,  height: 2,  },
             shadowColor: '#D8D8D8',
@@ -148,10 +147,10 @@ infoCard(){
             label={'Name'}
             iconClass={Foundation}
             iconName={'pencil'}
-            iconColor={'#248700'}
+            iconColor={'#CA5460'}
             iconSize={25}
-            labelStyle={{ marginTop: 1, color: '#248700', opacity: 0.4}}
-            inputStyle={{ color: '#2A2C2E' }}
+            labelStyle={{ marginTop: 1, color: '#CA5460', opacity: 0.4}}
+            inputStyle={{ color: '#CA5460' }}
             useNativeDriver
             onChangeText={(text) => { this.setState({textValue: text}) }}
           />
@@ -169,7 +168,7 @@ const styles = StyleSheet.create({
   title: {
     paddingBottom: 16,
     textAlign: 'left',
-    color: '#4B286D',
+    color: '#EECF70',
     fontSize: 30,
     opacity: 0.8,
     fontFamily: "HelveticaNeue-UltraLight",
@@ -178,7 +177,7 @@ const styles = StyleSheet.create({
     padding:10, 
     margin:20,
     alignItems:'center', 
-    backgroundColor:'#248700', 
+    backgroundColor:'#EECF70', 
     height:50,
     borderRadius:4,
     marginTop: 44,
@@ -223,7 +222,7 @@ detail: {
 itemName: {
   fontFamily: "HelveticaNeue-UltraLight",
   fontSize: 20,
-  color: "#4B286D"
+  color: "#CA5460"
 }
 });
 export default SearchScreen;
