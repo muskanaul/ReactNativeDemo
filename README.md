@@ -1,8 +1,8 @@
-﻿## ReactNativeWeb Boilerplate
+## ❤ ReactNativeWeb Boilerplate ❤
 
 Demo that utilizes React-Native and React-Native-Web for iOS, Android, and Web compatibility with one code base.
 
-**Features**
+👑 **Features** 👑
  - [x] Navigation (react-router for Web and react-navigation for
        Android/iOS)      
  - [x] Connection to database using Fetch API
@@ -11,9 +11,14 @@ Demo that utilizes React-Native and React-Native-Web for iOS, Android, and Web c
  - [x] Bundle dependencies across web/android/ios using lerna
  - [x] Integrated support for react-native component libraries (currently using components from react-native-material-ui,
        react-native-vector-icons, and react-native-textinput-effects)
-**Demo**
 
-**Installation**
+🎥 **Demo** 🎥
+
+![desktop](https://github.com/muskanaul/ReactNativeWeb/blob/master/desktop.gif?raw=true)
+
+![mobile](https://github.com/muskanaul/ReactNativeWeb/blob/master/mobile.gif?raw=true)
+
+📥 **Installation** 📥
 *Node 9 or below is required due to existing issues with peer dependencies*
 
  1. Clone repository
@@ -25,14 +30,14 @@ Demo that utilizes React-Native and React-Native-Web for iOS, Android, and Web c
  4. Bundle packages as dependencies 
 `yarn bootstrap`
 
-**Running in Web**
+💻 **Running in Web** 💻
  1. Navigate to web package
  `cd packages/web`
  2. Run webpack server
  `yarn watch:web`
  3. Open http://localhost:3000 in your browser
 
-**Running in Android/iOS**
+📲 **Running in Android/iOS** 📲
 1. Navigate to apps package
  `cd packages/apps`
  2. Start the haul server
@@ -43,9 +48,9 @@ Demo that utilizes React-Native and React-Native-Web for iOS, Android, and Web c
 `react-native run-android`
 `react-native run-ios`
 
-**Reloading JS**: If you make changes to the JS files, to see the changes on the emulator (Select emulator-> CTRL+M -> Select Reload)
+🎉 **Reloading JS** 🎉: If you make changes to the JS files, to see the changes on the emulator (Select emulator-> CTRL+M -> Select Reload)
 
-**Disable Delta:** Select your emulator -> CMD + M, select Dev Setting and uncheck JS Deltas
+🔮 **Disable Delta:** 🔮 Select your emulator -> CMD + M, select Dev Setting and uncheck JS Deltas
 
-**Troubleshooting**
+👾 **Troubleshooting** 👾
 If the build is successful, but you encounter **_“_****_Error: Activity class {com.apps/com.apps.MainActivity} does not exist”_**, there may be an issue with your android setup. For now, you can ignore this error, and  try **Disabling Delta** and **Reloading JS** by following instructions above.
