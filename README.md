@@ -1,6 +1,6 @@
 ## ❤ ReactNativeWeb Boilerplate ❤
 
-Demo that utilizes React-Native and React-Native-Web for iOS, Android, and Web compatibility with one code base.
+Boilerplate that utilizes React-Native and React-Native-Web for iOS, Android, and Web compatibility with one code base.
 
 👑 **Features** 👑
  - [x] Navigation (react-router for Web and react-navigation for
