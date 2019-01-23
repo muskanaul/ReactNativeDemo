@@ -54,3 +54,5 @@ Boilerplate that utilizes React-Native and React-Native-Web for iOS, Android, an
 
 👾 **Troubleshooting** 👾
 If the build is successful, but you encounter **_“_****_Error: Activity class {com.apps/com.apps.MainActivity} does not exist”_**, there may be an issue with your android setup. For now, you can ignore this error, and  try **Disabling Delta** and **Reloading JS** by following instructions above.
+
+Made with ❤️ in Waterloo
